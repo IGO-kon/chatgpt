@@ -26,6 +26,7 @@ def scrape_company_list():
             challenges = company.find("p", class_="challenges").text.strip()
             contact = company.find("p", class_="contact").text.strip()
             
+            
             # 会社情報を辞書としてリストに追加
             company_info = {
                 "company_name": company_name,
